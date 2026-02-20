@@ -1,40 +1,56 @@
-# Django Todo App
+# Django Todo Application
 
-A complete Todo web application built with Django, featuring a modern UI with Tailwind CSS.
+A complete Todo web application built with Django, featuring a modern UI with Tailwind CSS. This app allows users to efficiently manage their daily tasks with an intuitive interface.
 
-## Features
+## 🚀 Live Demo
 
-- ✅ Create, Read, Update, and Delete tasks
-- ✅ Mark tasks as completed/active
-- ✅ Filter tasks by status (All, Active, Completed)
-- ✅ Set due dates for tasks
-- ✅ Add descriptions to tasks
-- ✅ AJAX toggle completion without page reload
-- ✅ Beautiful, responsive UI with Tailwind CSS
-- ✅ Django messages framework for user feedback
+Check out the live application here: **[Django Todo App](https://ostad-batch-10-todo-app.onrender.com)**
 
-## Tech Stack
+## 🚀 Forked Repository Link
 
-- **Backend**: Python + Django
+Check out the forked repository link: **[Link](https://github.com/shekhmanzurmit05/Ostad_batch-09)**
+
+
+## ✨ Features
+
+- ✅ **Create Tasks** - Add new tasks with title, description, and due date
+- ✅ **Read Tasks** - View all your tasks in a clean, organized interface
+- ✅ **Update Tasks** - Edit task details or mark them as complete/incomplete
+- ✅ **Delete Tasks** - Remove tasks you no longer need
+- ✅ **Filter Tasks** - View All, Active, or Completed tasks with simple tabs
+- ✅ **AJAX Toggle** - Mark tasks complete without page reload
+- ✅ **Responsive Design** - Works perfectly on desktop, tablet, and mobile
+- ✅ **User-friendly Messages** - Django messages framework for feedback
+
+## 🛠️ Technology Stack
+
+- **Backend**: Python 3.11 + Django 5.2
 - **Frontend**: Django Templates + Tailwind CSS (via CDN)
-- **Database**: SQLite (for local development)
-- **JavaScript**: Minimal JS for enhanced UX (toggle completion)
+- **Database**: SQLite (development) / PostgreSQL (production)
+- **Server**: Gunicorn
+- **Deployment**: Render
 
-## Setup Instructions
+## 📋 Prerequisites
 
-### Prerequisites
+Before running this project locally, make sure you have:
 
-- Python 3.8 or higher
+- Python 3.8 or higher installed
 - pip (Python package manager)
+- Git (for cloning the repository)
 
-### Installation
+## 🔧 Local Installation Guide
 
-1. **Clone or navigate to the project directory:**
-   ```bash
-   cd /path/to/todo_project
-   ```
+Follow these steps to run the project on your local machine:
+
+1. **Clone the Repository:**
+
+```bash
+git clone https://github.com/yourusername/Ostad_batch-09.git
+cd Ostad_batch-09
+```
 
 2. **Create a virtual environment (recommended):**
+
    ```bash
    python3 -m venv venv
    source venv/bin/activate  # On Windows: venv\Scripts\activate
@@ -64,78 +80,3 @@ A complete Todo web application built with Django, featuring a modern UI with Ta
    ```
    http://127.0.0.1:8000/
    ```
-
-## Project Structure
-
-```
-todo_project/
-├── manage.py
-├── requirements.txt
-├── README.md
-├── db.sqlite3          # SQLite database (created after migrate)
-├── todo_project/       # Project settings
-│   ├── __init__.py
-│   ├── settings.py
-│   ├── urls.py
-│   ├── wsgi.py
-│   └── asgi.py
-├── tasks/              # Tasks app
-│   ├── __init__.py
-│   ├── models.py       # Task model
-│   ├── views.py        # CRUD views
-│   ├── forms.py        # Task form
-│   ├── urls.py         # App URLs
-│   ├── admin.py
-│   ├── tests.py        # Unit tests
-│   └── migrations/     # Database migrations
-└── templates/          # HTML templates
-    ├── base.html
-    └── tasks/
-        ├── task_list.html
-        ├── task_form.html
-        └── task_confirm_delete.html
-```
-
-## Usage
-
-### Creating a Task
-
-1. Click the "+ New Task" button on the task list page
-2. Fill in the task title (required)
-3. Optionally add a description and due date
-4. Click "Create Task"
-
-### Managing Tasks
-
-- **View Tasks**: All tasks are displayed on the home page
-- **Filter Tasks**: Use the tabs (All/Active/Completed) to filter tasks
-- **Toggle Completion**: Click "Mark Complete" or "Mark Active" to toggle task status
-- **Edit Task**: Click the "Edit" button to modify a task
-- **Delete Task**: Click the "Delete" button and confirm deletion
-
-### Admin Interface
-
-Access the Django admin panel at `http://127.0.0.1:8000/admin/` (requires superuser account).
-
-## Running Tests
-
-```bash
-python manage.py test
-```
-
-## Development
-
-### Making Changes
-
-1. **Model Changes**: After modifying `models.py`, run:
-   ```bash
-   python manage.py makemigrations
-   python manage.py migrate
-   ```
-
-2. **Static Files**: This project uses Tailwind CSS via CDN, so no static file collection is needed for development.
-
-## License
-
-This project is open source and available for educational purposes.
-
